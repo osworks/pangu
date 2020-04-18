@@ -8,7 +8,7 @@
 	<groupId>com.github.osworks</groupId>
 	<artifactId>pangu</artifactId>
 	<packaging>pom</packaging>
-	<version>4.1.1</version>
+	<version>4.1.0</version>
 	<name>PanGu Microservice Framework</name>
 	<description>${project.name}</description>
 	<url>https://github.com/osworks/pangu</url>
