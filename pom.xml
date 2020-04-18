@@ -14,7 +14,7 @@
 	<url>https://github.com/osworks/pangu</url>
 
 	<modules>
-		<!-- <module>pangu-toolbox</module> -->
+		<module>pangu-toolbox</module>
 		<module>pangu-common</module>
 		<module>pangu-orm</module>
 	</modules>
