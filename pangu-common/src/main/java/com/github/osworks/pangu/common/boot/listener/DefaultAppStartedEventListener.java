@@ -30,5 +30,4 @@ public class DefaultAppStartedEventListener implements ApplicationListener<Appli
         log.info(":: PanGu Microservice Framework Started");
     }
 
-
 }
