@@ -4,4 +4,4 @@
 |   ___/    /  /_\  \   |  . `  | |  | |_ | |  |  |  | 
 |  |       /  _____  \  |  |\   | |  |__| | |  `--'  | 
 | _|      /__/     \__\ |__| \__|  \______|  \______/                                                         
-PanGu Microservice Framework (V4.0.0)
+PanGu Microservice Framework (V4.1.0)

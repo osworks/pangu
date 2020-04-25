@@ -1,7 +1,7 @@
 package com.github.osworks.pangu.common.model.pagination;
 
 /**
- * 分页模型
+ * 分页模型包装
  * 
  * @author xiongchun
  * @see com.baomidou.mybatisplus.extension.plugins.pagination.Page
@@ -34,12 +34,24 @@ public class Page<T> extends com.baomidou.mybatisplus.extension.plugins.paginati
     }
     
     /**
-     * 将分页参数信息组装到page对象
-     * @param pageIn 继承了PageIn的入参对象
+     * 将PanGu自定义分页参数组装到PageWrapper对象
+     * @param pageIn 继承了{@link PageIn}的入参对象
      */
-    public Page<T> pageIn(PageIn pageIn) {
+    public Page(PageIn pageIn) {
         setCurrent(pageIn.getPageCurrent()).setSize(pageIn.getPageSize()).setSearchCount(pageIn.isSearchCount());
-        return this;
+    }
+    
+    /**
+     * wrapper to {@link PageOut} Object
+     * @return
+     */
+    public PageOut<T> pageOut(){
+        PageOut<T> pageOut = new PageOut<>();
+        pageOut.setCurrentPage(getCurrent());
+        pageOut.setPageSize(getSize());
+        pageOut.setRecords(getRecords());
+        pageOut.setTotal(getTotal());
+        return pageOut;
     }
 
 }

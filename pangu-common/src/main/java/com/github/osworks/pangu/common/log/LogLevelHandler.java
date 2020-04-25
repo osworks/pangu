@@ -46,7 +46,7 @@ public class LogLevelHandler {
         }
     }
 
-    public void getConfigAndRefreshLogLevel() {
+    public void initLogLevelWhenSartup() {
         String newCfgText = null;
         try {
             newCfgText = configService.getConfig(dataId, "DEFAULT_GROUP", 5000);
