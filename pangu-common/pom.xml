@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>com.github.osworks</groupId>
 		<artifactId>pangu</artifactId>
-		<version>4.1.0</version>
+		<version>4.1.1</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
@@ -21,7 +21,7 @@
 		<dependency>
 			<groupId>com.github.osworks</groupId>
 			<artifactId>pangu-toolbox</artifactId>
-			<version>4.1.0</version>
+			<version>4.1.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
