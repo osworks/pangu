@@ -7,9 +7,9 @@
 
 	<parent>
 		<groupId>com.github.osworks</groupId>
-		<artifactId>pangu</artifactId>
-		<version>4.1.1</version>
-		<relativePath>../pom.xml</relativePath>
+		<artifactId>pangu-parent</artifactId>
+		<version>4.1.2</version>
+		<relativePath />
 	</parent>
 
 	<artifactId>pangu-common</artifactId>
@@ -21,36 +21,31 @@
 		<dependency>
 			<groupId>com.github.osworks</groupId>
 			<artifactId>pangu-toolbox</artifactId>
-			<version>4.1.1</version>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.8</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<version>2.1.9.RELEASE</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.alibaba.boot</groupId>
 			<artifactId>nacos-config-spring-boot-starter</artifactId>
-			<version>0.2.7</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.baomidou</groupId>
 			<artifactId>mybatis-plus-boot-starter</artifactId>
-			<version>3.3.0</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
