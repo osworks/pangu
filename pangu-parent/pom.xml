@@ -24,6 +24,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<pangu.version>4.1.4</pangu.version>
+		<swagger.version>2.9.2</swagger.version>
 	</properties>
 
 	<licenses>
@@ -102,6 +103,16 @@
 				<groupId>com.github.osworks</groupId>
 				<artifactId>pangu-orm</artifactId>
 				<version>${pangu.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>${swagger.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>${swagger.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
