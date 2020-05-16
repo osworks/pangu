@@ -1,6 +1,7 @@
 package com.github.osworks.pangu.common.exception;
 
 import com.github.osworks.pangu.toolbox.util.Strings;
+
 import lombok.Getter;
 
 /**
