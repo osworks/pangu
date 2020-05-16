@@ -79,6 +79,16 @@ public class Result<T> implements Serializable{
 	}
 	
 	/**
+	 * 请求成功
+	 * @param <T>
+	 * @param message
+	 * @return
+	 */
+	public static <T> Result<T> success(String message){
+		return new Result<T>(true, Constants.Result.SUCCESS, message);
+	}
+	
+	/**
 	 * 请求失败
 	 * @param <T>
 	 * @return
