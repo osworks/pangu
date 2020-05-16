@@ -13,7 +13,7 @@
 
 	<groupId>com.github.osworks</groupId>
 	<artifactId>pangu-parent</artifactId>
-	<version>4.1.3</version>
+	<version>4.1.4</version>
 	<packaging>pom</packaging>
 	<name>parent of pangu microservice framework</name>
 	<description>the parent of pangu framework</description>
