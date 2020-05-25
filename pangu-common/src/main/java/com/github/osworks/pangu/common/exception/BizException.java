@@ -33,7 +33,7 @@ public class BizException extends RuntimeException {
     }
 
     public BizException(int code, String messageTemplate, Object... params) {
-        super(Strings.format("code：{}，" + messageTemplate, params));
+        super(Strings.format("code：{}，" + messageTemplate, code, params));
         this.code = code;
     }
 
