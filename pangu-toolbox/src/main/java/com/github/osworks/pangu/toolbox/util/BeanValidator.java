@@ -10,7 +10,6 @@ import javax.validation.groups.Default;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.exceptions.ValidateException;
-import cn.hutool.json.JSONUtil;
 
 /**
  * BeanValidator Utils
@@ -22,6 +21,7 @@ public class BeanValidator {
 	
 	private static Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
 	
+	private static final int INVALID_STATUS_CODE = -999;
 	
 	
 	/**
@@ -42,7 +42,7 @@ public class BeanValidator {
 	public static void validate(Object object, Class<?>... groups){
 		List<String> invalidMsgList = validateBean(object, groups);
 		if (CollUtil.isNotEmpty(invalidMsgList)) {
-			throw new ValidateException(-100, JSONUtil.toJsonStr(invalidMsgList));
+			throw new ValidateException(INVALID_STATUS_CODE,  String.join(" | ", invalidMsgList));
 		}
 	}
 	
